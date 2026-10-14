@@ -18,4 +18,4 @@ recebe aqui uma página de demonstração e uma proposta comercial:
 
 - As páginas têm `noindex` e o `robots.txt` bloqueia buscadores: só abre quem recebe o link.
 - Não edite à mão: o próximo "Publicar" sobrescreve as pastas `s/` e `p/`.
-- Quer um site assim para o seu negócio? Fale com Yago Santos Digital.
+- Quer um site assim para o seu negócio? [Fale no WhatsApp](https://wa.me/5511984370338).
