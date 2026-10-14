@@ -27,6 +27,11 @@
   .btn { background: var(--p); color: #fff; padding: 14px 24px; border-radius: 10px; text-decoration: none; font-weight: 600; }
   .btn.alt { background: #fff; color: var(--p); border: 2px solid var(--p); }
   .sign { margin-top: 44px; }
+  .pix { display: flex; gap: 24px; align-items: flex-start; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; font-family: system-ui, sans-serif; }
+  .pix .qr svg { width: 190px; height: 190px; display: block; }
+  .pix textarea { width: 100%; height: 70px; font-family: ui-monospace, monospace; font-size: 12px; border: 1px solid #d1d5db; border-radius: 8px; padding: 8px; resize: none; }
+  .pix button { border: 0; cursor: pointer; margin-top: 10px; font-size: 15px; }
+  @media (max-width: 640px) { .pix { flex-direction: column; align-items: center; } }
   @media (max-width: 640px) { .paper { padding: 32px 22px; } .top { flex-direction: column; gap: 8px; } }
   @media print { body { background: #fff; padding: 0; } .paper { box-shadow: none; } .btns { display: none; } }
 </style>
@@ -80,10 +85,26 @@
 
   <h2>Próximos passos</h2>
   <ol>
-    <li>Você responde "QUERO" no WhatsApp;</li>
+    <li>Você paga o valor de entrada pelo Pix abaixo e responde "QUERO" no WhatsApp;</li>
     <li>Registramos o domínio em seu nome e você envia logo e fotos (opcional);</li>
     <li>Publicamos o site e você começa a receber clientes pelo Google.</li>
   </ol>
+
+  
+  <h2>Pagamento via Pix</h2>
+  <div class="pix">
+    <div class="qr"><svg width="265" height="265" class="segno"><path transform="scale(5)" class="qrline" stroke="#111827" d="M2 2.5h7m9 0h1m3 0h2m1 0h2m5 0h2m1 0h1m3 0h1m2 0h1m1 0h7m-49 1h1m5 0h1m2 0h1m1 0h1m6 0h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h2m3 0h7m1 0h1m5 0h1m-49 1h1m1 0h3m1 0h1m1 0h2m2 0h1m1 0h2m2 0h1m1 0h5m1 0h1m3 0h4m2 0h1m2 0h2m1 0h1m1 0h3m1 0h1m-49 1h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h1m3 0h2m1 0h1m2 0h1m8 0h4m2 0h1m2 0h1m1 0h3m1 0h1m-49 1h1m1 0h3m1 0h1m1 0h1m2 0h1m3 0h1m1 0h2m2 0h7m1 0h2m2 0h1m1 0h1m1 0h1m4 0h1m1 0h3m1 0h1m-49 1h1m5 0h1m1 0h1m2 0h2m1 0h1m1 0h4m1 0h2m3 0h2m5 0h2m1 0h3m3 0h1m5 0h1m-49 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-41 1h1m4 0h1m1 0h4m3 0h1m3 0h8m1 0h1m3 0h1m-40 1h1m1 0h5m2 0h1m2 0h5m2 0h2m1 0h6m2 0h1m2 0h1m2 0h1m3 0h1m1 0h5m-47 1h3m1 0h1m2 0h1m1 0h1m2 0h1m1 0h1m2 0h2m3 0h3m3 0h1m1 0h2m1 0h1m1 0h1m3 0h1m2 0h1m2 0h1m1 0h1m-47 1h1m1 0h1m2 0h1m1 0h1m1 0h5m1 0h2m4 0h1m1 0h3m2 0h1m1 0h1m2 0h1m1 0h6m6 0h1m-46 1h3m2 0h1m1 0h2m1 0h1m1 0h2m4 0h1m2 0h3m1 0h1m1 0h1m1 0h4m1 0h2m3 0h1m2 0h1m2 0h1m-49 1h2m2 0h1m1 0h2m1 0h1m2 0h1m1 0h2m2 0h1m3 0h3m1 0h1m3 0h2m3 0h2m1 0h2m1 0h3m2 0h3m-44 1h1m2 0h5m2 0h1m1 0h4m1 0h1m1 0h1m5 0h1m1 0h1m4 0h1m4 0h3m2 0h1m-48 1h1m2 0h1m1 0h5m5 0h1m1 0h2m1 0h4m1 0h5m1 0h3m2 0h2m3 0h1m1 0h1m2 0h1m1 0h1m-48 1h3m1 0h1m2 0h2m1 0h6m1 0h3m1 0h2m3 0h1m1 0h1m3 0h2m1 0h1m2 0h1m1 0h4m3 0h1m-48 1h2m2 0h2m4 0h1m4 0h6m2 0h1m3 0h1m2 0h3m1 0h4m1 0h3m2 0h1m2 0h1m-47 1h1m1 0h2m1 0h2m1 0h2m2 0h1m1 0h1m6 0h3m1 0h3m2 0h2m1 0h1m3 0h1m2 0h1m1 0h2m1 0h1m-48 1h2m1 0h8m1 0h1m1 0h1m1 0h4m3 0h2m3 0h1m1 0h4m2 0h4m1 0h1m1 0h1m1 0h1m2 0h1m-48 1h2m1 0h1m3 0h1m2 0h4m1 0h1m4 0h1m1 0h1m1 0h4m1 0h3m1 0h3m4 0h1m1 0h3m2 0h1m-49 1h1m1 0h2m1 0h2m2 0h1m3 0h1m5 0h2m1 0h1m1 0h1m1 0h2m1 0h1m3 0h4m3 0h2m4 0h1m1 0h1m-49 1h1m4 0h1m1 0h2m1 0h1m1 0h3m1 0h3m2 0h1m1 0h4m1 0h3m1 0h1m3 0h1m2 0h1m2 0h1m4 0h1m-47 1h1m1 0h6m1 0h7m3 0h7m1 0h1m2 0h1m1 0h2m1 0h3m1 0h5m1 0h1m1 0h1m-49 1h2m2 0h1m3 0h1m8 0h1m3 0h2m3 0h1m1 0h1m1 0h4m1 0h1m4 0h1m3 0h2m1 0h2m-49 1h2m2 0h1m1 0h1m1 0h3m3 0h1m1 0h1m2 0h4m1 0h1m1 0h2m2 0h1m3 0h1m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m-46 1h1m1 0h2m3 0h1m1 0h2m1 0h2m2 0h2m2 0h2m3 0h1m1 0h1m1 0h1m1 0h2m1 0h2m2 0h2m3 0h1m2 0h1m-48 1h10m3 0h1m2 0h1m2 0h1m2 0h6m1 0h1m1 0h1m2 0h5m1 0h5m1 0h1m1 0h1m-49 1h3m2 0h1m1 0h1m1 0h7m3 0h1m1 0h2m1 0h1m2 0h2m3 0h1m1 0h1m2 0h1m-38 1h2m2 0h1m1 0h2m2 0h3m2 0h5m2 0h1m1 0h1m4 0h2m2 0h1m1 0h2m2 0h1m2 0h3m3 0h1m-47 1h2m1 0h1m2 0h2m2 0h1m1 0h1m1 0h2m3 0h1m1 0h1m3 0h1m1 0h2m1 0h1m3 0h2m1 0h2m1 0h1m3 0h2m-47 1h4m1 0h1m2 0h3m1 0h1m5 0h1m7 0h1m1 0h3m3 0h2m2 0h1m2 0h1m2 0h1m2 0h1m-47 1h2m3 0h2m4 0h2m2 0h2m2 0h3m1 0h2m3 0h2m1 0h1m1 0h1m3 0h3m5 0h1m-45 1h1m1 0h2m2 0h2m3 0h1m1 0h2m1 0h3m2 0h1m2 0h1m1 0h2m2 0h1m2 0h1m2 0h2m1 0h1m2 0h1m2 0h1m-48 1h1m1 0h1m1 0h1m1 0h2m1 0h3m2 0h1m5 0h4m5 0h2m1 0h1m9 0h1m1 0h1m1 0h1m-47 1h3m2 0h2m2 0h1m1 0h1m1 0h3m2 0h1m1 0h1m1 0h2m2 0h1m1 0h2m2 0h1m2 0h5m1 0h2m1 0h1m2 0h1m-48 1h1m3 0h1m8 0h1m2 0h1m3 0h7m2 0h3m8 0h1m3 0h1m1 0h2m-49 1h2m1 0h6m3 0h1m2 0h1m1 0h1m1 0h1m1 0h3m10 0h1m1 0h1m2 0h1m2 0h3m1 0h3m-49 1h1m3 0h1m2 0h1m2 0h1m2 0h3m2 0h2m1 0h2m1 0h2m4 0h2m3 0h1m3 0h1m5 0h3m-47 1h1m3 0h2m1 0h3m2 0h2m2 0h2m1 0h1m3 0h2m1 0h1m5 0h2m1 0h5m1 0h4m2 0h1m-48 1h3m4 0h1m5 0h2m2 0h1m2 0h2m1 0h2m2 0h8m5 0h1m3 0h1m1 0h2m-49 1h3m3 0h1m1 0h1m1 0h1m2 0h3m3 0h9m8 0h1m2 0h6m1 0h3m-41 1h1m1 0h2m1 0h1m4 0h1m3 0h1m3 0h1m3 0h1m2 0h1m2 0h1m2 0h2m3 0h4m-48 1h7m2 0h1m2 0h2m2 0h3m2 0h2m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h1m-49 1h1m5 0h1m1 0h1m9 0h2m1 0h2m3 0h1m1 0h1m1 0h3m2 0h1m1 0h2m1 0h1m3 0h1m-45 1h1m1 0h3m1 0h1m1 0h1m7 0h1m1 0h1m3 0h5m2 0h1m1 0h1m1 0h2m1 0h10m1 0h2m-49 1h1m1 0h3m1 0h1m1 0h6m2 0h6m1 0h1m3 0h6m2 0h3m2 0h1m1 0h3m3 0h1m-49 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m2 0h2m2 0h2m2 0h1m1 0h4m2 0h2m1 0h1m2 0h1m2 0h2m-47 1h1m5 0h1m3 0h2m1 0h1m3 0h1m1 0h6m2 0h1m1 0h1m4 0h1m1 0h2m1 0h1m1 0h2m1 0h2m2 0h1m-49 1h7m1 0h1m2 0h1m1 0h2m1 0h2m1 0h3m2 0h2m2 0h1m2 0h6m2 0h1m1 0h2m3 0h3"/></svg></div>
+    <div>
+      <p style="margin-top:0"><b>R$ 537,00</b> para começar (criação + domínio do 1º ano).<br>
+        <span class="muted">Recebedor: Yago Santos Silva. A mensalidade de
+        R$ 59,00 começa só depois que o site estiver no ar.</span></p>
+      <p class="muted" style="margin-bottom:4px">Pix copia e cola:</p>
+      <textarea id="pixcode" readonly>00020126330014br.gov.bcb.pix0111554562478365204000053039865406537.005802BR5917YAGO SANTOS SILVA6009SAO PAULO62110507LF000046304B3F8</textarea>
+      <button class="btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('pixcode').value);this.textContent='✔ Código copiado'">📋 Copiar código Pix</button>
+      <p class="muted">Depois de pagar, envie o comprovante no WhatsApp para liberarmos o seu site.</p>
+    </div>
+  </div>
+  
 
   <div class="btns">
     <a class="btn" href="https://wa.me/5511984370338?text=Ol%C3%A1%21%20Vi%20a%20proposta%20e%20QUERO%20o%20site%20do%20Meu%20Barbeiro%20Tatuap%C3%A9.">✅ Quero o meu site</a>
